@@ -1,0 +1,12 @@
+.todo-list {
+  margin: 50px auto 0;
+  max-width: 400px;
+
+  > * {
+    display: block;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+}

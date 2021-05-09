@@ -1,0 +1,7 @@
+<div class="todo-item">
+  <p class="todo-item-text">{{ item.text }}</p>
+
+  <div class="todo-item controls">
+    <button class="delete" (click)="delete.emit(item.id)">Delete</button>
+  </div>
+</div>
