@@ -15,6 +15,8 @@ export class AddFormComponent implements OnInit {
   ngOnInit(): void {}
 
   addItem(): void {
+    if (!this.text.trim()) return;
+
     const newItem: TodoItemInterface = {
       text: this.text,
       id: Math.floor(Math.random() * 1000),
